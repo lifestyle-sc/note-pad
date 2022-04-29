@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .outline:focus{
+            outline: none;
+        }
+    </style>
+    <title>Note Taking App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 mx-auto mt-3">
+                <h1>Note Taking App</h1>
+                <div class="card p-2  mt-3 mb-3">
+                     <form id="input-form">
+                        <div class="form-group">
+                            <textarea name="" id="note" class="form-control"></textarea>
+                            <div class="invalid-feedback">
+                                Enter a valid note
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block col-md-2 mx-auto">Save Note</button>
+                     </form>   
+                </div>
+                <hr>
+
+                <div class="row" id="detail">
+                    <!-- <div class="col-md-6 mx-auto">
+                        <div class="card mt-2 mb-3">
+                            <div class="card-body"> -->
+                                <!-- Button trigger modal -->
+                                <!-- <button type="button" id="details-btn" class="btn btn-primary" data-toggle="modal" data-target="#locModal">
+                                Details
+                                </button>
+                            </div>
+                        </div> 
+                    </div> -->
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="locModal" tabindex="-1" aria-labelledby="locModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="locModalLabel">Details</h5>
+                    <button type="button" class="close outline" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body" id="detail-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="local.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
